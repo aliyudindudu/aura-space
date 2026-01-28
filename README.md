@@ -8,7 +8,7 @@
 
 **A luxury architecture firm landing page showcasing premium design and smooth animations.**
 
-[Live Demo](#) · [Portfolio](https://github.com/YOUR_USERNAME)
+[Live Demo](#) · [Portfolio](https://github.com/aliyudindudu)
 
 </div>
 
