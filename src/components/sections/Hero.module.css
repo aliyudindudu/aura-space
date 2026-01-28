@@ -1,0 +1,115 @@
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: var(--color-bg-primary);
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: var(--container-padding);
+}
+
+/* Title */
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-hero);
+    font-weight: var(--font-light);
+    letter-spacing: var(--tracking-widest);
+    line-height: var(--leading-none);
+    color: var(--color-text-primary);
+    transform: translateY(30px);
+}
+
+.titleLine {
+    display: block;
+}
+
+/* Gold Accent Line */
+.accentLine {
+    width: 0;
+    height: 1px;
+    background-color: var(--color-accent);
+    margin: var(--space-8) 0;
+}
+
+/* Tagline */
+.tagline {
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+    font-weight: var(--font-light);
+    letter-spacing: var(--tracking-wide);
+    color: var(--color-text-secondary);
+    line-height: var(--leading-relaxed);
+    max-width: 400px;
+    transform: translateY(20px);
+}
+
+/* Scroll Indicator */
+.scrollIndicator {
+    position: absolute;
+    bottom: var(--space-12);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    color: var(--color-text-tertiary);
+}
+
+.scrollText {
+    font-family: var(--font-body);
+    font-size: var(--text-xs);
+    font-weight: var(--font-medium);
+    letter-spacing: var(--tracking-widest);
+    text-transform: uppercase;
+}
+
+.scrollArrow {
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(6px);
+    }
+
+    60% {
+        transform: translateY(3px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .title {
+        gap: var(--space-1);
+    }
+
+    .tagline {
+        font-size: var(--text-base);
+    }
+
+    .accentLine {
+        margin: var(--space-6) 0;
+    }
+}
