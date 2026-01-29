@@ -8,7 +8,7 @@
 
 **A luxury architecture firm landing page showcasing premium design and smooth animations.**
 
-[Live Demo](#) · [Portfolio](https://github.com/aliyudindudu)
+[Live Demo](https://aura-space-eta.vercel.app/) · [Portfolio](https://github.com/aliyudindudu)
 
 </div>
 
